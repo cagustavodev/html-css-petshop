@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banho e Tosa</title>
+</head>
+
+<body>
+    <a href="index.html">Home</a>
+
+    <h1>
+        Agendamento para banho e tosa
+    </h1>
+
+    <h2>
+        Faça o seu agendamento com pelo menos 48 horas de antecedência
+    </h2>
+
+    <form action="index.html">
+        <fieldset>
+            <legend>Identificação do dono do animal</legend>
+
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" placeholder="Digite o nome completo do dono do animal" size="50" id="nome">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="Endereço">Endereço:</label>
+                <input type="text" placeholder="Digite o endereço" id="Endereço">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="CEP">CEP:</label>
+                <input type="text" maxlength="9" placeholder="XXXXX-XXX" id="CEP">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" size="50" maxlength="85" placeholder="Digite seu email" id="email">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="Tel">Tel/Cel</label>
+                <input type="text" placeholder="(99) 99999-9999" id="Tel">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Animal</legend>
+
+            <div>
+                <label for="animal">Nome do animal:</label>
+                <input type="text" placeholder="Digite o nome do animal" id="animal">
+            </div>
+
+            <br>
+
+            <div>
+                <label>Porte do cão:</label><br>
+
+                <input type="radio" name="porte" id="pequeno">
+                <label for="pequeno">Pequeno</label><br>
+
+                <input type="radio" name="porte" id="medio">
+                <label for="medio">Médio</label><br>
+
+                <input type="radio" name="porte" id="grande">
+                <label for="grande">Grande</label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="Tosa">Tipo de tosa:</label>
+                <select name="Tipo de Tosa" id="Tosa">
+                    <option value="opt1">Completa</option>
+                    <option value="opt2">Só Corpo </option>
+                    <option value="opt3">Só Cabeça</option>
+                    <option value="opt4">Personalizada</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="obs">Observações sobre o animal:</label> <br>
+                <textarea name="obs" cols="30" rows="5" id="obs"
+                    placeholder="Digite informações do animal que sejam necessárias"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Horário - Obs: Não atendemos aos domingos e às segundas-feiras</legend>
+
+            <p>Indique os dias da semana de sua preferência:</p>
+
+            <div>
+                <input type="checkbox" name= "horario" id ="ter">
+                <label>terça-feira</label>
+
+                <input type="checkbox" name= "horario" id ="qua">
+                <label>quarta-feira</label>
+
+                <input type="checkbox" name= "horario" id ="qui">
+                <label>quinta-feira</label>
+
+                <input type="checkbox" name= "horario" id ="sex">
+                <label>sexta-feira</label>
+
+                <input type="checkbox" name= "horario" id ="sab">
+                <label>sábado</label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="data">Primeira opção de horário:</label>
+                <input type="date" id="data">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="data2">Segunda opção de horário:</label>
+                <input type="date" id="data2">
+            </div>
+
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>
